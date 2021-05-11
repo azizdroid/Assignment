@@ -1,0 +1,9 @@
+.todo-body {
+  border: 5px solid white;
+  padding: 5px;
+  background: white;
+  width: 65%;
+  background-position: center;
+  height: 80%;
+  margin: 30px;
+}

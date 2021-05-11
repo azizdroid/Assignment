@@ -4,14 +4,14 @@ import "antd/dist/antd.css"; // or 'antd/dist/antd.less'
 import { PlusOutlined, DeleteOutlined } from "@ant-design/icons";
 import TodoItem from "./TodoItem";
 import Time from "./Time";
-
+import "./todo.css";
 function Todo() {
   const [value, setValue] = useState("");
   const [item, setitem] = useState([]);
 
   const addtodo = () => {
     if (value === "") {
-      alert("enter a value");
+      alert("enter a Task");
     } else {
       setitem((initialarray) => {
         return [...initialarray, value];
@@ -21,9 +21,9 @@ function Todo() {
   };
 
   return (
-    <div>
+    <div className="todo-body">
       <Row justify="center">
-        <Col>
+        <Col md={16}>
           <Time /> <h1>TODO LIST</h1>
           <Input
             size="middle"
